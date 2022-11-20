@@ -4,12 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+
 // import 'element-plus/theme-chalk/index.css'
 // // import locale from 'element-plus/lib/locale/lang/zh-cn'
 
 
 import ElementUI from 'element-ui';                      // 引入element-ui
 import 'element-ui/lib/theme-chalk/index.css';           // element-ui的css样式要单独引入
+
+import store from './store' //引入 Vuex 状态管理
 
 // import ElementPlus from 'element-plus'
 // import 'element-plus/dist/index.css'
@@ -34,6 +37,7 @@ Vue.use(ElementUI)
 new Vue({
   el: '#app',
   router,
+  store, //使用 Vuex 进行状态管理
   components: { App },
   template: '<App/>'
 })
