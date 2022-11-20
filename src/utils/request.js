@@ -1,6 +1,6 @@
 import axios from 'axios' //引入 axios
 // import baseUrl from '../api/baseUrl' //使用环境变量 + 模式的方式定义基础URL
-export let baseUrl="http://localhost:8081" 
+export var baseUrl="http://localhost:8100" 
 // 创建 axios 实例
 const service = axios.create({
   baseURL: baseUrl, // api 的 base_url
