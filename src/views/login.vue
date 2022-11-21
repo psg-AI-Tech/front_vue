@@ -84,6 +84,7 @@ export default {
             .then(response => {
               this.loading = false;
               let code = response.data.code;
+              console.log(response.data.data);
               if (code == 200) {
                 this.$router.push({
                   path: "/success",
