@@ -82,19 +82,19 @@ export default {
           this.$store
             .dispatch("Login", this.loginForm)
             .then(response => {
-              // console.log(response.data.code);
+              console.log(response.data.code);
               this.loading = false;
               let code = response.data.code;
               // let code=200
               if (code == 200) {
                 this.$router.push({
-                  path: "/success",
-                  // query: { data: response.data.data }
+                  path: "/successTest",
+                  query: { data: response.data.data }
                 });
               } else {
                 this.$router.push({
                   path: "/error",
-                  // query: { message: response.data.message }
+                  query: { message: response.data.message }
                 });
               }
             })

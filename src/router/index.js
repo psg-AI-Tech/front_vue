@@ -12,6 +12,7 @@ export default new Router({
 
     //配置登录成功页面，使用时需要使用 path 路径来实现跳转
     { path: '/success', component: () => import('@/views/success')},
+    { path: '/successTest', component: () => import('@/views/loginTest')},
 
     //配置登录失败页面，使用时需要使用 path 路径来实现跳转
     { path: '/error', component: () => import('@/views/error'), hidden: true }

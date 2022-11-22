@@ -4,6 +4,7 @@
   </div>
 </template>
 <script>
+console.log("------------- success");
 export default {
   data() {
     return {
